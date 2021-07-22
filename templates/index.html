@@ -11,14 +11,15 @@
         <table>
             {% for item in items %}
                 <tr>
-                    <td><img src="{{item.Image}}"></td>
+                    <td><a href="https://store.steampowered.com/app/{{item.AppID}}" target="_blank"><img src="{{item.Image}}" alt="{{item.Name}} Logo"></a></td>
                     <td>{{ item.Name }}</td>
-                    <td> <a href="https://store.steampowered.com/app/{{appid}}">Link to {{ item.Name }}</a></td>
+                    <td class="stars">{{ item.Score }}</td>
+                    <td class="time">{{ item.Time }}</td>
                 </tr>
             {% endfor %}
         </table>
     </div>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="./static/js/main.js"></script>
   </body>
 </html>
 

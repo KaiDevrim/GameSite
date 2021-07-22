@@ -24,7 +24,6 @@ if (response.status_code == 200):
         timeType = 0
 
         if (time > 60):
-            time = time%60
             # TimeType = 1 = Hours
             timeType = 1
         else:
